@@ -478,6 +478,9 @@ on property:sys.boot_completed=1
     write /sys/class/leds/red/brightness 1
     write /sys/class/leds/red/brightness 0
 
+    #Starting perf properly
+    setprop vendor.post_boot.parsed 1
+
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
