@@ -121,6 +121,7 @@ vendor.gralloc.enable_fb_ubwc=1
 vendor.video.disable.ubwc=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+ro.config.avoid_gfx_accel=true
 
 # FM
 vendor.hw.fm.init=0
