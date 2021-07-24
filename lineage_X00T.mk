@@ -51,3 +51,10 @@ PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.vendor.product.device \
     ro.vendor.product.model \
     ro.vendor.product.name
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# FLOS
+TARGET_FLOS := true
+FLOS_TYPE := vanilla

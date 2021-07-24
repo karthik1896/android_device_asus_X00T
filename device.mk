@@ -1,4 +1,4 @@
-# 
+#
 # Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     libspkrprot \
     libhfp
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
@@ -356,7 +356,8 @@ TARGET_USES_RRO := true
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/Snap \
-    $(LOCAL_PATH)/overlay-system
+    $(LOCAL_PATH)/overlay-system \
+    $(DEVICE_PATH)/overlay-lineage
 
 # Power
 PRODUCT_PACKAGES += \
