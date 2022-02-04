@@ -97,6 +97,10 @@ persist.vendor.camera.HAL3.enabled=1
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
 # Display
 debug.sf.hw=1
 debug.sf.recomputecrop=0
