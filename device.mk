@@ -14,6 +14,10 @@ PRODUCT_COMPRESSED_APEX := false
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
 
+# Include display HAL makefiles.
+include hardware/qcom-caf/msm8998/display/display-commonsys-intf/config/display-interfaces-product.mk
+include hardware/qcom-caf/msm8998/display/display-commonsys-intf/config/display-product-system.mk
+
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
