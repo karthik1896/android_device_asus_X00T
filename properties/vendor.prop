@@ -110,6 +110,9 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # Display
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
