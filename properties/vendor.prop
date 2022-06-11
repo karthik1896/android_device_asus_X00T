@@ -98,6 +98,17 @@ vidc.enc.dcvs.extra-buff-count=2
 # Charger
 ro.charger.enable_suspend=true
 
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=verify
+pm.dexopt.boot=verify
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
