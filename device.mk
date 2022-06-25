@@ -5,7 +5,7 @@
 #
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/asus/sdm660-common/sdm660-common-vendor.mk)
+$(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -294,9 +294,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+    $(LOCAL_PATH)/overlay-voltage
 
 # Permissions
 PRODUCT_COPY_FILES += \
