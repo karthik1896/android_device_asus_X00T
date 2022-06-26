@@ -31,3 +31,8 @@
 /bt_firmware(/.*)?                              u:object_r:bt_firmware_file:s0
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
 
+# SystemInfo
+/sys/class/thermal/thermal_zone0/temp          u:object_r:sysfs_device_info:s0
+/sys/kernel/gpu/gpu_clock                      u:object_r:sysfs_device_info:s0
+/sys/kernel/gpu/gpu_busy                       u:object_r:sysfs_device_info:s0
+/sys/class/power_supply/battery/temp           u:object_r:sysfs_device_info:s0
