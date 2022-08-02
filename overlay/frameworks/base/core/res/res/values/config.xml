@@ -117,7 +117,7 @@
      <bool name="config_lidControlsSleep">false</bool>
 
     <!-- Should the pinner service pin the Home application? -->
-     <bool name="config_pinnerHomeApp">true</bool>
+     <bool name="config_pinnerHomeApp">false</bool>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
