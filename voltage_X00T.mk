@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
