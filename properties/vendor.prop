@@ -119,6 +119,7 @@ debug.hwui.skia_atrace_enabled=false
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_transaction_tracing=false
 ro.opengles.version=196610
 vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
