@@ -79,6 +79,7 @@ vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=false
 
 # Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3300
 persist.bluetooth.disableabsvol=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
