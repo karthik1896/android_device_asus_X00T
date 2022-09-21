@@ -23,6 +23,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
 
 # Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD,X00T
 
 # Audio
@@ -157,12 +158,16 @@ BOARD_USES_QCOM_HARDWARE := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-SELINUX_IGNORE_NEVERALLOWS := true
+
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
