@@ -6,6 +6,9 @@ genfscon    sysfs   /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-01/800f
 # IIO device
 genfscon    sysfs   /bus/iio/devices                        u:object_r:sysfs_iio_devices:s0
 
+# ProcFS
+genfscon proc /sys/vm/dirty_writeback_centisecs                       u:object_r:proc_dirty:s0
+
 # RTC
 genfscon    sysfs   /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-00/800f000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc               u:object_r:sysfs_rtc:s0
 

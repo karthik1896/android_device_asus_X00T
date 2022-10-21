@@ -18,3 +18,7 @@ allow vendor_init apex_metadata_file:dir { r_dir_perms };
 
 # Allow vendor_init to set persist_camera_prop
 set_prop(vendor_init, vendor_persist_camera_prop)
+
+# ProcFS
+allow vendor_init proc_dirty:file w_file_perms;
+allow vendor_init proc_dirty_ratio:file w_file_perms;
