@@ -100,6 +100,9 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 WITH_DEXPREOPT_DEBUG_INFO := false
+# Enable whole-program R8 Java optimizations for SystemUI and system_server
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Display
 PRODUCT_PACKAGES += \
