@@ -37,6 +37,9 @@ DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
+# Render
+debug.cpurend.vsync=false
+
 # Sensors
 ro.vendor.qti.sensors.dev_ori=true
 ro.vendor.qti.sensors.pmd=true
