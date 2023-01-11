@@ -132,6 +132,7 @@ debug.hwui.target_cpu_time_percent=30
 ro.config.avoid_gfx_accel=true
 vendor.display.disable_metadata_dynamic_fps=1
 vendor.display.perf_hint_window=50
+vendor.display.disable_partial_split=1
 
 # Fling
 ro.min.fling_velocity=160 
