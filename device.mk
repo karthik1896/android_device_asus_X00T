@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# APEX
+PRODUCT_COMPRESSED_APEX := false
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
